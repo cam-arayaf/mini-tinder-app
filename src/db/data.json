@@ -1,0 +1,79 @@
+[
+	{
+		"id": 1,
+		"name": "Karl",
+		"description": "Developer",
+		"age": 26,
+		"image": "/static/media/karl.da4b77c2.jpg",
+		"likedUsers": [],
+		"superLikedUsers": [],
+		"dislikedUsers": [],
+		"likedBy": []
+	},
+	{
+		"id": 2,
+		"name": "Martin",
+		"description": "Prisoner at Federal Correctional Institution",
+		"age": 35,
+		"image": "/static/media/martin.2609b244.jpg",
+		"likedUsers": [],
+		"superLikedUsers": [],
+		"dislikedUsers": [],
+		"likedBy": []
+	},
+	{
+		"id": 3,
+		"name": "Emily",
+		"description": "Actress",
+		"age": 35,
+		"image": "/static/media/emily.762b1b87.jpg",
+		"likedUsers": [],
+		"superLikedUsers": [],
+		"dislikedUsers": [],
+		"likedBy": []
+	},
+	{
+		"id": 4,
+		"name": "Michael",
+		"description": "Manager",
+		"age": 45,
+		"image": "/static/media/michael.d39218b7.jpg",
+		"likedUsers": [],
+		"superLikedUsers": [],
+		"dislikedUsers": [],
+		"likedBy": []
+	},
+	{
+		"id": 5,
+		"name": "Dwight",
+		"description": "Sales",
+		"age": 40,
+		"image": "/static/media/dwight.0a5e4a55.jpg",
+		"likedUsers": [],
+		"superLikedUsers": [],
+		"dislikedUsers": [],
+		"likedBy": []
+	},
+	{
+		"id": 6,
+		"name": "Jessica",
+		"description": "Actress",
+		"age": 37,
+		"image": "/static/media/jessica.2cfad25e.jpg",
+		"likedUsers": [],
+		"superLikedUsers": [],
+		"dislikedUsers": [],
+		"likedBy": []
+	},
+	{
+		"id": 7,
+		"name": "Alexandra",
+		"description": "Actress",
+		"age": 32,
+		"image": "/static/media/alexandra.95ce4964.jpg",
+		"likedUsers": [],
+		"superLikedUsers": [],
+		"dislikedUsers": [],
+		"likedBy": []
+	}
+]
