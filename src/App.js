@@ -1,16 +1,14 @@
 import React, { Fragment, useEffect, useState } from 'react';
-import data from './db/data.json';
+import { loggedUser, users } from './constants';
 import Main from './components/Main';
 import End from './components/End';
 
 const App = () => {
-	const [users, setUsers] = useState([]);
+	useEffect(() => console.log('loggedUser:', loggedUser));
+	useEffect(() => console.log('users:', users));
+
 	const [index, setIndex] = useState(0);
 	const [end, setEnd] = useState(false);
-    
-	useEffect(() => setUsers(data), []);
-	useEffect(() => setIndex(1), []);
-	useEffect(() => console.log(users));
 
 	const next = () => index < users.length - 1 ? setIndex(index + 1) : setEnd(true);
 	
@@ -18,19 +16,19 @@ const App = () => {
 
 	const dislike = () => {
 		next();
-		users[0].dislikedUsers.push(users[index].id);
+		loggedUser.dislikedUsers.push(users[index].id);
 	}
 
 	const like = () => {
 		next();
-		users[0].likedUsers.push(users[index].id);
-		users[index].likedBy.push(users[0].id);
+		loggedUser.likedUsers.push(users[index].id);
+		users[index].likedBy.push(loggedUser.id);
 	}
 
 	const superlike = () => {
 		next();
-		users[0].superLikedUsers.push(users[index].id);
-		users[index].likedBy.push(users[0].id);
+		loggedUser.superLikedUsers.push(users[index].id);
+		users[index].likedBy.push(loggedUser.id);
 	}
 
 	return (
@@ -47,7 +45,7 @@ const App = () => {
 						superlike={ superlike }
 					/>
 				:
-					<End users={ users } />
+					<End users={ users } loggedUser={ loggedUser } />
 			}
 		</Fragment>
 	);

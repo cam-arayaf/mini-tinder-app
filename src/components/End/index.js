@@ -4,12 +4,18 @@ import NoAnyone from './NoAnyone';
 import LikedUsers from './LikedUsers';
 import SuperLikedUsers from './SuperLikedUsers';
 
-const End = ({ users }) => (
+const End = ({ users, loggedUser }) => (
     <section className="section-end">
         <Grid container spacing={ 3 } justify="center">
-            <NoAnyone users={ users } />
-            { users[0].likedUsers.length ? <LikedUsers users={ users } /> : null }
-            { users[0].superLikedUsers.length ? <SuperLikedUsers users={ users } /> : null }
+            <NoAnyone loggedUser={ loggedUser } />
+            {
+                loggedUser.likedUsers.length ?
+                    <LikedUsers users={ users } loggedUser={ loggedUser } /> : null
+            }
+            {
+                loggedUser.superLikedUsers.length ?
+                    <SuperLikedUsers users={ users } loggedUser={ loggedUser } /> : null
+            }
         </Grid>
     </section>
 );

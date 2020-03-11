@@ -1,13 +1,14 @@
 import React, { Fragment } from 'react';
 import { Grid } from '@material-ui/core';
+import { getImage } from './../../utils';
 
-const NoAnyone = ({ users }) => (
+const NoAnyone = ({ loggedUser }) => (
     <Fragment>
         <Grid item xs={ 12 }>
             <span>There's no anyone arround you.</span>
         </Grid>
         <Grid item xs={ 12 }>
-            <img src={ users[0].image } alt={ users[0].name } />
+            <img src={ getImage(loggedUser.name) } alt={ loggedUser.name } />
         </Grid>
     </Fragment>
 );

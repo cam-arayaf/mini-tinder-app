@@ -12,9 +12,7 @@ const Header = () => (
             {
                 images.map((image, index) => {
                     const alt = index === 0 ? 'user' : index === 1 ? 'logo' : 'messages';
-
                     const widthHeigth = index === 1 ? 35 : 20;
-
                     return (
                         <Grid key={ image} item xs={ 4 }>
                             <img src={ image } alt={ alt } width={ widthHeigth } heigth={ widthHeigth } />

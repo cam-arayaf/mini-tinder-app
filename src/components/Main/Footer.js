@@ -14,10 +14,8 @@ const Footer = ({ rewind, dislike, like, superlike }) => (
                 images.map((image, index) => {
                     const onClick = () =>
                         index === 0 ? rewind() : index === 1 ? dislike() : index === 2 ? like() : superlike();
-                    
                     const alt =
                         index === 0 ? 'rewind' : index === 1 ? 'dislike' : index === 2 ? 'like' : 'superlike';
-                    
                     return (
                         <Grid key={ image } item xs={ 3 }>
                             <IconButton onClick={ () => onClick() }>

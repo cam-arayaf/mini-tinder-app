@@ -1,20 +1,19 @@
 import React, { Fragment } from 'react';
 import { Grid } from '@material-ui/core';
+import { getImage } from '../../utils';
 
-const SuperLikedUsers = ({ users }) => (
+const SuperLikedUsers = ({ users, loggedUser }) => (
     <Fragment>
         <Grid item xs={ 12 }>
             <span>People you super liked!</span>
         </Grid>
         <Grid container spacing={ 3 } justify="center">
             {
-                users[0].superLikedUsers.map(superLikedUser => {
-                    const user = users.find(user => user.id === superLikedUser);
-                    const src = user.image;
-                    const alt = user.name;
+                loggedUser.superLikedUsers.map(superLikedUser => {
+                    const name = users.find(user => user.id === superLikedUser).name;
                     return (
                         <Grid key={ superLikedUser } item xs={ 4 }>
-                            <img src={ src } alt={ alt } />
+                            <img src={ getImage(name) } alt={ name } />
                         </Grid>
                     );
                 })
