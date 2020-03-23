@@ -7,7 +7,7 @@ import superlikeImg from './../../assets/img/misc/superlike.png';
 
 const images = [rewindImg, dislikeImg, likeImg, superlikeImg];
 
-const Footer = ({ rewind, dislike, like, superlike }) => (
+const Footer = ({ rewind, dislike, like, superlike, rewindUser }) => (
     <footer>
         <Grid container spacing={ 3 } justify="center">
             {
@@ -16,7 +16,8 @@ const Footer = ({ rewind, dislike, like, superlike }) => (
                         index === 0 ? rewind() : index === 1 ? dislike() : index === 2 ? like() : superlike();
                     const alt =
                         index === 0 ? 'rewind' : index === 1 ? 'dislike' : index === 2 ? 'like' : 'superlike';
-                    return (
+                    return ( 
+                        index === 0 && rewindUser === 0 ? null :
                         <Grid key={ image } item xs={ 3 }>
                             <IconButton onClick={ () => onClick() }>
                                 <img src={ image } alt={ alt } width="20" heigth="20" />

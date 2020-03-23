@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid } from '@material-ui/core';
-import { getImage } from './../../utils';
+import { getImage } from './../../helpers';
 
 const Section = ({ users, index }) => (
     <section className="section-main">

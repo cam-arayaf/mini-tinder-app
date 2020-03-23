@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { Grid } from '@material-ui/core';
-import { getImage } from '../../utils';
+import { getImage } from '../../helpers';
 
 const LikedUsers = ({ users, loggedUser }) => (
     <Fragment>

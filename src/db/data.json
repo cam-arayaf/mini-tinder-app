@@ -8,7 +8,9 @@
 		"likedUsers": [],
 		"superLikedUsers": [],
 		"dislikedUsers": [],
-		"likedBy": []
+		"likedBy": [],
+		"superLikedBy": [],
+		"dislikedBy": []
 	},
 	{
 		"id": 2,
@@ -19,7 +21,9 @@
 		"likedUsers": [],
 		"superLikedUsers": [],
 		"dislikedUsers": [],
-		"likedBy": []
+		"likedBy": [],
+		"superLikedBy": [],
+		"dislikedBy": []
 	},
 	{
 		"id": 3,
@@ -30,7 +34,9 @@
 		"likedUsers": [],
 		"superLikedUsers": [],
 		"dislikedUsers": [],
-		"likedBy": []
+		"likedBy": [],
+		"superLikedBy": [],
+		"dislikedBy": []
 	},
 	{
 		"id": 4,
@@ -41,7 +47,9 @@
 		"likedUsers": [],
 		"superLikedUsers": [],
 		"dislikedUsers": [],
-		"likedBy": []
+		"likedBy": [],
+		"superLikedBy": [],
+		"dislikedBy": []
 	},
 	{
 		"id": 5,
@@ -52,7 +60,9 @@
 		"likedUsers": [],
 		"superLikedUsers": [],
 		"dislikedUsers": [],
-		"likedBy": []
+		"likedBy": [],
+		"superLikedBy": [],
+		"dislikedBy": []
 	},
 	{
 		"id": 6,
@@ -63,7 +73,9 @@
 		"likedUsers": [],
 		"superLikedUsers": [],
 		"dislikedUsers": [],
-		"likedBy": []
+		"likedBy": [],
+		"superLikedBy": [],
+		"dislikedBy": []
 	},
 	{
 		"id": 7,
@@ -74,6 +86,8 @@
 		"likedUsers": [],
 		"superLikedUsers": [],
 		"dislikedUsers": [],
-		"likedBy": []
+		"likedBy": [],
+		"superLikedBy": [],
+		"dislikedBy": []
 	}
 ]

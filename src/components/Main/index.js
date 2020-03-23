@@ -7,7 +7,13 @@ const Main = ({ users, index, rewind, dislike, like, superlike }) => (
 	<Fragment>
 		<Header />
 		<Section users={ users } index={ index } />
-		<Footer rewind={ rewind } dislike={ dislike } like={ like } superlike={ superlike } />
+		<Footer
+			rewind={ rewind }
+			dislike={ dislike }
+			like={ like }
+			superlike={ superlike }
+			rewindUser={ index }
+		/>
 	</Fragment>
 );
 
